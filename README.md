@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Jiu Kim</h1>
 <h3 align="center">Big impacts are made together.</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jiumiu" alt="jiumiu" /></a> </p>
-
 - 👨‍💻 All of my projects are available at [https://jiumiu.github.io/](https://jiumiu.github.io/)
 
 - 📫 How to reach me **jiu.judy@gmail.com**
