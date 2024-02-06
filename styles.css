@@ -1,0 +1,101 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    max-width: 1200px; /* 페이지 최대 폭을 설정 */
+    margin: auto; /* 페이지를 중앙에 배치 */
+    padding: 0 20px;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #24292e;
+    padding: 20px 80px;
+    position: relative;
+}
+
+.menu-toggle {
+    display: block; /* 항상 표시 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 2rem; /* 아이콘 크기 */
+    z-index: 1000; /* 다른 요소들 위에 나타나도록 z-index 설정 */
+    color: #fff; /* 배경과 대비되는 색상 */
+}
+
+.brand-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff; /* 헤더 배경색과 대비되는 색상 */
+}
+
+.social-links {
+    display: flex; /* flexbox를 사용하여 정렬 */
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin-left: 10px;
+    font-size: 1.5em; /* 아이콘 크기 증가 */
+}
+
+nav#navbar {
+    display: none; /* 기본적으로 숨김 상태 */
+    position: absolute;
+    top: 60px; /* 헤더 높이에 맞춤 */
+    left: 0;
+    background-color: #24292e;
+    width: 100%;
+    padding: 10px;
+    list-style-type: none;
+    z-index: 999; /* 햄버거 메뉴보다 낮은 z-index */
+}
+
+nav#navbar ul {
+    flex-direction: column; /* 모바일에서 세로 방향으로 표시 */
+}
+
+nav#navbar ul li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    /* 데스크탑에 적용되는 스타일 */
+    .menu-toggle {
+        display: block; /* 데스크탑에서도 햄버거 메뉴 표시 */
+    }
+    .brand-title {
+        position: static; /* 데스크탑에서 정상 위치로 */
+        margin: 0 auto;
+    }
+    nav#navbar {
+        display: flex; /* 데스크탑에서 내비게이션 메뉴 표시 */
+        position: static; /* 정상 위치로 */
+        flex-direction: row;
+        justify-content: center; /* 내비게이션 메뉴 가운데 정렬 */
+        background-color: transparent; /* 배경색 제거 */
+        width: auto;
+        padding: 0;
+    }
+    nav#navbar ul li a {
+        padding: 0 10px; /* 가로 방향의 메뉴 항목 간격 조정 */
+    }
+    .social-links {
+        display: block; /* 데스크탑에서 소셜 링크 표시 */
+    }
+}
