@@ -155,8 +155,6 @@ ul li:not(:last-child) {
     font-size: 1em;
 }
 
-
-
 .experience-header p {
     font-size: 0.9em;
     color: #666;
@@ -173,7 +171,26 @@ ul li:not(:last-child) {
     color: #333;
 }
 
+.projects-section {
+    margin-bottom: 2em;
+}
 
+.project-item {
+    margin-bottom: 1.5em;
+}
+
+.project-item h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.project-item p {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: justify; /* 텍스트를 양쪽 정렬로 표시합니다. */
+}
 
 
 
