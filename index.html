@@ -6,26 +6,29 @@
     <title>Portfolio | Jiu Kim</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <div class="nav-menu">
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#tech">Tech Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </div>
-        <h2 class="nav-title" id="refresh-page">지우</h2>
-    </nav>
+    <div class="nav-container">
+        <nav class="nav">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#tech">Tech Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <h2 class="nav-title" id="refresh-page">지우</h2>
+        </nav>
+    </div>
 
     <main>
         <div class="about">
@@ -38,12 +41,17 @@
             </div>
             <div class="content">
                 <h1 id="about-me">About Me</h1>
-                <p>I decided to major in Software Engineering Technology because I love to be challenged, have a positive impact on people, and develop valuable services.</p>
+                <p>I am a second year student at Conestoga College majoring in Software Engineering Technology. I decided to major in Software Engineering Technology because I love to be challenged, have a positive impact on people, and develop valuable services.</p>
+                <p> I am currently seeking a co-op job and am ready to utilize my comprehensive background in technology and customer engagement to drive innovation and solutions. </p>
                 <br/>
                 <h1 id="tech">Tech Skills</h1>
-                <ul>
-                    <li>Tech Skills details here</li>
-                </ul>
+                    <div class="skills">
+                        <span class="badge">C/C++</span>
+                        <span class="badge">C#</span>
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <!-- Add more badges as needed -->
+                    </div>
                 <br/>
                 <h1 id="experience">Experience</h1>
                 <ul>
@@ -73,7 +81,14 @@
     </main>
 
     <footer>
-        <span>&copy; <time datetime="2024-02-06">2024</time>Portfolio by Jiu Kim.</span>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="mailto:jiu.judy@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/jiumiu" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jiu-kim/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-text">© <time datetime="2024-02-06">2024</time> Portfolio by Jiu Kim.</div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
