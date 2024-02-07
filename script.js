@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('refresh-page').addEventListener('click', function() {
         window.location.reload(); // 현재 페이지 새로고침
     });
+
+    document.getElementById('conestogaDescription').style.display = 'none';
+    document.getElementById('inhaDescription').style.display = 'none';
 });
 
 function toggleDescription(descId) {
