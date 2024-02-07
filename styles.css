@@ -97,7 +97,6 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px;
 }
@@ -142,7 +141,12 @@ ul li:not(:last-child) {
     border-radius: 20px; /* Rounded corners */
     background-color: #E1E1E1; /* Badge background color */
     color: #333; /* Badge text color */
-    
+}
+
+.badge:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .experience-section {
