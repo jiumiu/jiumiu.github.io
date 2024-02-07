@@ -295,7 +295,7 @@ ul li:not(:last-child) {
 
     .nav-title {
         font-size: 1.2em;
-        display: none;
+        margin-left: auto;
     }
 
     .profile img {
