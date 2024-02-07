@@ -185,6 +185,56 @@ ul li:not(:last-child) {
     color: #333;
 }
 
+.education-item h3 {
+    cursor: pointer;
+    color: #333333;
+    transition: color 0.3s ease;
+}
+
+.education-item h3:hover {
+    color: #cdcdcd; 
+}
+
+.education-description {
+    display: none;
+    text-align: left;   
+    font-size: 0.9em; /* 글씨 크기 */
+    color: #666; /* 글씨 색상 */
+    padding-left: 1em; /* 좌측 패딩 */
+    border-left: 2px solid #666; /* 좌측 테두리 */
+    margin-bottom: 1em; /* 다음 항목과의 여백 */
+}
+
+/* 세부 설명이 표시될 때의 스타일 */
+.education-item.active  {
+    display: block;
+    color: #666666; 
+}
+
+.collapsible {
+    position: relative; /* ::after를 올바르게 위치시키기 위함 */
+    cursor: pointer; /* 클릭 가능함을 나타내는 커서 모양 */
+}
+
+.collapsible::after {
+    content: '>'; /* 'Conestoga College, Waterloo, ON' 옆에 '>' 표시 */
+    position: absolute; /* 절대 위치 */
+    right: -20px; /* 오른쪽에서 20px 떨어진 위치 */
+    top: 0; /* 위에서 0px 위치 */
+    transition: transform 0.3s ease; /* 애니메이션 효과 */
+}
+
+.collapsible.active::after {
+    transform: rotate(90deg); /* 활성화 되었을 때 90도 회전 */
+}
+
+.collapsible:hover::after {
+    color: #cdcdcd; 
+}
+
+
+
+
 .project-item {
     display: flex;
     align-items: center;
@@ -227,9 +277,9 @@ ul li:not(:last-child) {
 }
 
 .social-icons a {
-    color: #333; /* 아이콘 기본 색상 */
+    color: #626262; /* 아이콘 기본 색상 */
     margin: 0 10px;
-    font-size: 2.3em; /* 아이콘 크기를 키웁니다. */
+    font-size: 2.4em; /* 아이콘 크기를 키웁니다. */
 }
 
 .social-icons a:hover {
@@ -245,6 +295,7 @@ ul li:not(:last-child) {
 
     .nav-title {
         font-size: 1.2em;
+        display: inline-block;
     }
 
     .profile img {
